@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Lifecycle overview</Title>
+			<Shortcut>Unity_LifeCycle</Shortcut>
+			<Description>Lifecycle overview width MonoBehaviour</Description>
+			<Author>NTHOAI</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType> 
+			</SnippetTypes>
+		</Header>
+		<Snippet> 
+			<Code Language="csharp"><![CDATA[
+			// Public Varible ***********************************************************************
+			//***************************************************************************************
+			 
+
+			// Private Varible **********************************************************************
+			//***************************************************************************************
+
+
+			// Private function *********************************************************************
+			//***************************************************************************************
+
+				
+
+			// Life-Cycle ***************************************************************************
+			//***************************************************************************************
+			 
+			// Được gọi trước hàm Start() (gọi ngay khi game object được attach vào scene)
+			//private void Awake(){} 
+			
+			// Được gọi khi GameObject được enabled (bật)
+			private void Start()
+			{ 
+			
+			}
+
+			// Được gọi tại mỗi frame (khung hình) trong game, tuỳ vào logic mà hàm này có thể bị skip để tránh việc bị giảm FPS
+			private void Update()
+			{ 
+			
+			}
+ 
+			//  Được gọi ở mỗi frame, và không thể bị skip physics frame, chuyên dùng cho các tương tác vật lý, nếu ko dùng vật lý thì cũng không cần 
+			//private void FixedUpdate(){} 
+
+			// Được gọi sau khi tất cả các hàm update đã được gọi
+			//private void LateUpdate(){}
+			 
+			// Được gọi khi GameObject bị enabled (Gọi trước hàm Start)
+			//private void OnEnable(){}
+
+			// Được gọi khi GameObject bị disable
+			//private void OnDisable(){}
+
+			// Được gọi khi GameObject bị destroyed (bị loại khỏi màn, thông qua hàm GameObject.Destroy)
+			//private void OnDestroy(){ }
+
+			// Được gọi khi màn chơi được vẽ (drawing) và cho phép script sử dụng GUI-API  
+			//private void OnGUI(){} 
+			
+			]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
